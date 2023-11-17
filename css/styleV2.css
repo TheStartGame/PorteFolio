@@ -1,0 +1,1255 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #f0efef rgb(255, 255, 255);
+  }
+  
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+    z-index: 1;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 80px;
+    border: 5px solid #64848a;
+    height: 20px;
+  }
+  *::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    color: white;
+  }
+  
+body{
+    background-color: black;
+    color:white;
+    font-family: "Helvetica Neue", sans-serif;
+    height: 100%;
+    }
+   
+  main {
+    flex: 1;
+  }   
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 20px;
+    text-align: center;
+}
+
+.buttons a { 
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.3s;
+    margin: 16px; /* Adjusted for responsive spacing */
+    font-size: 2vw; /* Responsive font size */
+}
+
+.buttons a:hover{
+    color: #00BDDD;
+    transition: ease-in-out 0.3s;
+}
+
+.acceuil {
+  height: 700px;
+  width: 100%;
+}
+
+.forme {
+    position: absolute;
+    height: 20vw; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage */
+    width: 20vw; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage pour garder un cercle parfait */
+    max-height: 650px; /* Limite maximale pour les grands écrans */
+    max-width: 650px; /* Limite maximale pour les grands écrans */
+    left: 0%; /* Ajuste la position horizontale */
+    top: 0%; /* Ajuste la position verticale */
+    border-bottom-right-radius: 100%;
+    background-color: #00BDDD;
+    z-index: -1;
+}
+
+.caquse {
+  position: absolute;
+  transform: scale(0.9);
+  top: 0%; /* Position verticale ajustée */
+  left: 10%; /* Position horizontale ajustée */
+  max-height: 650px; /* Limite maximale pour les grands écrans */
+  max-width: 650px; /* Limite maximale pour les grands écrans */
+  z-index: -1;
+  width: 10vw; /* Largeur en fonction de la largeur de la fenêtre du navigateur */
+  height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+}
+
+.ordi {
+  position: absolute;
+  top:20%;
+  left: 4%; 
+  max-height: 650px; /* Limite maximale pour les grands écrans */
+  max-width: 650px; /* Limite maximale pour les grands écrans */
+  width: 10vw; /* Largeur en fonction de la largeur de la fenêtre du navigateur */
+  height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+}
+
+.foto{
+  position: absolute;
+  top: 6%;
+  right: 2.5%;
+  width: 10vw; /* Largeur en fonction de la largeur de la fenêtre du navigateur */
+  height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+}
+
+.forme2 {
+  position: absolute;
+  height: 20vw; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage */
+  width: 20vw; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage pour garder un cercle parfait */
+  max-height: 650px; /* Limite maximale pour les grands écrans */
+  max-width: 650px; /* Limite maximale pour les grands écrans */
+  right: 0%; /* Ajuste la position horizontale */
+  top: 0%; /* Ajuste la position verticale */
+  border-bottom-left-radius: 100%;
+  background-color: #e02fef;
+  z-index: -1;
+}
+
+#titre{
+  display: flex;
+  justify-content: center;
+  font-size: 6vw;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18%;
+  background: linear-gradient(90deg, #00bddd, #349ce1, #6c78e6, #af4eeb, #e02fef, #00bddd);
+  background-size: 300%;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  animation: animate 12s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 300%;
+  }
+}
+
+#titre-suite{
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #00bddd, #349ce1, #6c78e6, #af4eeb, #e02fef, #00bddd);
+  background-size: 300%;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  animation: animate 12s linear infinite;
+  margin-top: 15px;
+}
+
+.manette{
+  position: absolute;
+  right: 1.5%;
+  width: 10vw;
+  height: auto;
+  top: 80%;
+}
+
+.cinema{
+  position: absolute;
+  left: 2%;
+  width: 8vw;
+  height: auto;
+  top: 80%;
+}
+
+.carrerose {
+  position: absolute;
+  width: 25vw; /* Largeur totale, incluant le cercle */
+  height: 12.5vw; /* Hauteur du rectangle */
+  background-color: #e02fef; /* Couleur de fond du rectangle */
+  top: 115%;
+  left: 0%;
+  z-index: -1;
+}
+
+.rondrose {
+  position: absolute;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 100%;
+  right: 68.6%;
+  top: 115%;
+  background-color: #e02fef;
+  z-index: -1;
+}
+
+#production h1 {
+  position: absolute;
+  font-size: 3vw;
+  top: 119%;
+  left: 8%;
+}
+
+.p1 {
+  position: absolute; 
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 40%;
+  height: auto;
+  top: 158%;
+  left: 6%;
+}
+
+#production a {
+  background: linear-gradient(90deg, #00bddd, #349ce1, #6c78e6, #af4eeb, #e02fef, #00bddd);
+  background-size: 300%;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  animation: animate 12s linear infinite;
+  transition: transform 0.3s ease;
+  font-size: 1.65vw;
+}
+
+.youtube {
+  position: absolute;
+  height: 6vw;
+  width: 6vw;
+  top: 174%;
+  left: 3%;
+}
+
+.kinemaster {
+  position: absolute;
+  top: 172%;
+  left: 38%;
+  height: 5vw;
+  width: 5vw;
+}
+
+.youcut {
+  position: absolute;
+  top: 170%;
+  left: 42%;
+  height: 5vw;
+  width: 5vw;
+}
+
+.chaineytb {
+  position: absolute;
+  top: 155%;
+  right: 5%;
+  height: 25vw;
+  width: 25vw;
+  transform: rotate(-5deg);
+}
+
+.pavé2 {
+  position: absolute;   
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 40%;
+  height: auto;
+  top: 186%;
+  right: 1%;
+  text-align: right;
+}
+
+.davinci {
+  position: absolute;
+  height: 5vw;
+  width: 5vw;
+  top: 195%;
+  right: 35%;
+}
+
+.rondbleu6 {
+  position: absolute;
+  right: 0%;
+  top: 210%;
+  height: 7vw;
+  width: 7vw;
+}
+
+
+.instagram {
+  position: absolute;
+  right: 0%;
+  top: 210%;
+  height: 10vw;
+  width: 10vw;
+}
+
+.pavé3 {
+  position: absolute;   
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 40%;
+  height: auto;
+  top: 215%;
+  left: 8%;
+  text-align: left;
+}
+
+
+.rondrose7 {
+  position: absolute;
+  top: 220%;
+  left: 0%;
+  height: 13vw;
+  width: 13vw;
+}
+
+
+.instagram1 {
+  position: absolute;
+  height: 16vw;
+  width: 16vw;
+  transform: rotate(-10deg);
+  top: 238%;
+  left: 25%;
+}
+
+.instagram2 {
+  position: absolute;
+  height: 16vw;
+  width: 16vw;
+  transform: rotate(10deg);
+  top: 268%;
+  left: 40%;
+}
+
+.instagram3 {
+  position: absolute;
+  height: 16vw;
+  width: 16vw;
+  transform: rotate(-10deg);
+  top: 252%;
+  left: 55%;
+}
+
+.pavé4 {
+  position: absolute;   
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 40%;
+  height: auto;
+  top: 350%;
+  right: 15%;
+  text-align: center;
+}
+
+.card{
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top : 345%;
+  left: 15%;
+  height: 25vw;
+  width: 25vw;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 2px 20px rgba(0,0,0,0.4);
+}
+
+.carrebleu {
+  position: absolute;
+  width: 25vw; /* Largeur totale, incluant le cercle */
+  height: 12.5vw; /* Hauteur du rectangle */
+  background-color: #00bddd; /* Couleur de fond du rectangle */
+  top: 390%;
+  right: 0%;
+  z-index: -1;
+}
+
+.rondbleu {
+  position: absolute;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 100%;
+  left: 68.6%;
+  top: 390%;
+  background-color: #00bddd;
+  z-index: -1;
+}
+
+#stage h1 {
+  position: absolute;
+  font-size: 3vw;
+  top: 394%;
+  right: 12%;
+}
+
+#production {
+  height: 2650px;
+  width: 100%;
+}
+
+#stage {
+  height: 1700px;
+  width: 100%;
+}
+
+.canopé1 {
+  position: absolute;
+  height: 25vw;
+  width: 25vw;
+  top: 420%;
+  left: 25%;
+}
+
+.canopé2 {
+  position: absolute;
+  height: 25vw;
+  width: 25vw;
+  top:445%;
+  left: 9%; 
+}
+
+.canopé3 {
+  position: absolute;
+  height: 20vw;
+  width: 20vw;
+  top: 440%;
+  left: 20%; 
+}
+
+.pavé5 {
+  position: absolute;   
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 40%;
+  height: auto;
+  top: 450%;
+  right: 2%;
+  text-align: right;
+}
+
+.pavé6 {
+  position: absolute;   
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 40%;
+  height: auto;
+  top: 470%;
+  right: 25%;
+  text-align: center;
+}
+
+.vidéo {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top: 480%;
+  right: 2%;
+}
+
+.pavé7 {
+  position: absolute;   
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 65%;
+  height: auto;
+  top: 502%;
+  left: 2%;
+  text-align: left;
+}
+
+.club {
+  position: absolute;
+  height: 20vw;
+  width: 20vw;
+  top: 500%;
+  right: 8%;
+  transform: rotate(10deg);
+}
+
+.pavé8 {
+  position: absolute;   
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  width: 45%;
+  height: auto;
+  top: 540%;
+  left: 2%;
+  text-align: left;
+}
+
+.carrerose2 {
+  position: absolute;
+  width: 25vw; /* Largeur totale, incluant le cercle */
+  height: 12.5vw; /* Hauteur du rectangle */
+  background-color: #e02fef; /* Couleur de fond du rectangle */
+  top: 570%;
+  left: 0%;
+  z-index: -1;
+}
+
+.rondrose2 {
+  position: absolute;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 100%;
+  right: 68.6%;
+  top: 570%;
+  background-color: #e02fef;
+  z-index: -1;
+}
+
+#formation h1 {
+  position: absolute;
+  font-size: 3vw;
+  top: 574%;
+  left: 10%;
+}
+
+#formation {
+  height: 1450px;
+}
+
+.pave9 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: left;
+  top: 600%;
+  width: 50%;
+  left: 4%;
+}
+
+#formation a {
+  background: linear-gradient(90deg, #00bddd, #349ce1, #6c78e6, #af4eeb, #e02fef, #00bddd);
+  background-size: 300%;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  animation: animate 12s linear infinite;
+  transition: transform 0.3s ease;
+  font-size: 1.65vw;
+}
+
+.pave10 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: right;
+  top: 620%;
+  width: 50%;
+  right: 4%;
+}
+
+.diplome {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  top: 600%;
+  right: 6%;
+}
+
+.cour {
+  position: absolute;
+  height: 18vw;
+  width: 18vw;
+  top: 620%;
+  left: 2%;
+}
+
+.pave11 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: left;
+  top: 655%;
+  width: 50%;
+  left: 4%;
+}
+
+.pave12 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: right;
+  top: 680%;
+  width: 45%;
+  right: 4%;
+}
+
+.carrebleu2 {
+  position: absolute;
+  width: 25vw; /* Largeur totale, incluant le cercle */
+  height: 12.5vw; /* Hauteur du rectangle */
+  background-color: #00bddd; /* Couleur de fond du rectangle */
+  top: 710%;
+  right: 0%;
+  z-index: -1;
+}
+
+.rondbleu2 {
+  position: absolute;
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 100%;
+  left: 68.6%;
+  top: 710%;
+  background-color: #00bddd;
+  z-index: -1;
+}
+
+#dev h1 {
+  position: absolute;
+  font-size: 3vw;
+  top: 714%;
+  right: 5%;
+}
+
+#dev {
+  height: 1400px;
+}
+
+.pave13 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: center;
+  top: 750%;
+  width: 45%;
+  right: 25%;
+}
+
+.figma {
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  top: 740%;
+  left: 2%;
+}
+
+.figmalogo {
+  position: absolute;
+  height: 8vw;
+  width: 8vw;
+  top: 750%;
+  right: 20%;
+}
+
+.pave14 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: center;
+  top: 790%;
+  width: 45%;
+  left: 12%;
+}
+
+.vscodelogo {
+  position: absolute;
+  height: 8vw;
+  width: 8vw;
+  top: 790%;
+  left: 10%;
+}
+
+.html {
+  position: absolute;
+  height: 25vw;
+  width: 25vw;
+  top: 815%;
+  left: 10%;
+}
+
+.css {
+  position: absolute;
+  height: 25vw;
+  width: 25vw;
+  top: 800%;
+  right: 10%;
+}
+
+.pave15 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: center;
+  top: 825.5%;
+  transform: rotate(10deg);
+  width: 45%;
+  right:1.5%;
+}
+
+.pave16 {
+  position: absolute;
+  font-size: 1.5vw;
+  text-align: center;
+  top: 841%;
+  transform: rotate(-5deg);
+  width: 45%;
+  left:0.4%;
+}
+
+.ligne {
+  position: absolute;
+  width: 98%; /* Largeur de la ligne */
+  height: 0.1vw; /* Épaisseur de la ligne */
+  background-color: #ffffff; /* Couleur de la ligne */
+  top: 870%;
+}
+
+#footer {
+  height: 200px;
+}
+
+.contact {
+  position: absolute;
+  left: 5%;
+  top: 870%;
+  font-size: 2vw;
+}
+
+.contact a{
+  background: linear-gradient(90deg, #00bddd, #349ce1, #6c78e6, #af4eeb, #e02fef, #00bddd);
+  background-size: 300%;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  animation: animate 12s linear infinite;
+  transition: transform 0.3s ease;
+  font-size: 3w;
+}
+
+.reseaux {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 20px;
+  text-align: center;
+}
+
+.contactinstagram {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  right: 5%;
+  top: 873%;
+}
+
+.contactyoutube {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  right: 12%;
+  top: 873%;
+}
+
+.contactgithub {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  right: 19%;
+  top: 873%;
+}
+
+.oui {
+  position: absolute;
+  text-decoration: bold;
+  font-size: 1.1vw;
+  left: 35%;
+  top: 880%;
+}
+
+@media (max-width: 600px) {
+
+  .buttons a{
+    display: none;
+  }
+
+  .forme{
+    height: 15vh; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage */
+    width: 15vh; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage pour garder un cercle parfait */
+  }
+  
+  .caquse {
+    transform: scale(.45); /* Mise à l'échelle réduite pour les petits écrans */
+    top: -8%; /* Ajustement de la position verticale pour les petits écrans */
+    left: 8%; /* Ajustement de la position horizontale pour les petits écrans */
+    width: 45vw; /* Largeur en fonction de la largeur de la fenêtre du navigateur */
+    height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+  }
+
+  .ordi {
+    transform: scale(.45); /* Mise à l'échelle réduite pour les petits écrans */
+    top: 1%; /* Ajustement de la position verticale pour les petits écrans */
+    left: -5%; /* Ajustement de la position horizontale pour les petits écrans */
+    width: 45vw; /* Largeur en fonction de la largeur de la fenêtre du navigateur */
+    height: auto; /* Hauteur ajustée automatiquement pour conserver les proportions */
+  }
+
+  .foto {
+    transform: scale(1.5);
+    top: 3.5%;
+    right: 6%;
+  }
+
+  .forme2 {
+    height: 15vh; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage */
+    width: 15vh; /* Ajuster en fonction de la hauteur de la fenêtre d'affichage pour garder un cercle parfait */
+  }
+
+  .acceuil {
+    height: 600px;
+  }
+
+  #titre {
+    margin-top: 80%;
+    font-size: 15vw;
+  }
+
+  #titre-suite {
+    font-size: 10vw;
+  }
+
+  .manette {
+    transform: scale(1.8);
+    top: 90%;
+    right: 5%;
+  }
+
+  .cinema {
+    transform: scale(1.8);
+    top: 90%;
+    left: 7%;
+  }
+
+  .carrerose {
+    top: 100%;
+    left: 0%;
+    width: 50vw;
+    height: 22vw;
+  }
+
+  .rondrose {
+    top: 100%;  
+    width: 22vw;
+    height: 22vw;
+    left: 39%;
+  }
+
+  #production h1 {
+    top: 101%;
+    left: 12%;
+    font-size: 6vw;
+  }
+
+  .p1 {
+    top: 115%;
+    font-size: 4.8vw;
+    text-align: right;
+    width: 90%;
+    height: auto;
+  }
+
+  #production a {
+    font-size: 5vw;
+  }
+
+  .youtube {
+    height: 18vw;
+    width: 18vw;
+    top: 130%;
+  }
+
+  .kinemaster {
+    display: none;
+  }
+  
+  .youcut {
+    display: none;
+  }
+
+  .chaineytb {
+    top: 138%;  
+    height: 45vw;
+    width: 45vw;
+  }
+
+  .pavé2 {
+    top: 150%;
+    font-size: 4.8vw;
+    text-align: left;
+    width: 87%;
+    height: auto;
+    left: 3%;
+  }
+
+  .davinci {
+    height: 16vw;
+    width: 16vw;
+    top: 158%;
+    right: 2%;
+  }
+
+  .rondbleu6 {
+    height: 16vw;
+    width: 16vw;
+    top: 175%;
+    transform: rotate(180deg);
+    left: 0%;
+  }
+
+  .instagram {
+    height: 16vw;
+    width: 16vw;
+    top: 165%;
+    left: 0%;
+  }
+
+  .pavé3 {
+    top: 168%;
+    font-size: 4.8vw;
+    text-align: right ;
+    width: 87%;
+    height: auto;
+    right: 0%;
+  }
+
+  .rondrose7 {
+    display: none;
+  }
+
+  .instagram1 {
+    height: 60vw;
+    width: 60vw;
+    transform: rotate(-8deg);
+    top: 190%;
+    left: 10%;
+  }
+
+  .instagram2 {
+    height: 60vw;
+    width: 60vw;
+    transform: rotate(8deg);
+    top: 230%;
+    left: 35%;
+  }
+
+  .instagram3 {
+    display: none;
+  }
+
+  .card{
+    height: 65vw;
+    width: 65vw;
+    top: 286%;
+  }
+
+  .pavé4 {
+    top: 305%;
+    font-size: 4.8vw;
+    width: 75%;
+    left: 12%;
+  }
+ 
+  .carrebleu {
+    top: 325%;
+    right: 0%;
+    width: 50vw;
+    height: 22vw;
+  }
+
+  .rondbleu {
+    top: 325%;  
+    width: 22vw;
+    height: 22vw;
+    left: 40%;
+  }
+
+  #stage h1 {
+    top: 326%;
+    right: 20%;
+    font-size: 6vw;
+  }
+
+  .canopé1 {
+    position: absolute;
+    height: 60vw;
+    width: 60vw;
+    top: 340%;
+    left: 35%;
+  }
+  
+  .canopé2 {
+    position: absolute;
+    height: 60vw;
+    width: 60vw;
+    top: 355%;
+    left: 6%; 
+  }
+  
+  .canopé3 {
+    position: absolute;
+    height: 45vw;
+    width: 45vw;
+    top: 350%;
+    left: 20%;
+  }
+
+  .pavé5 {
+    top: 380%;
+    font-size: 4.5vw;
+    width: 95%;
+    left: 2%;
+    text-align: center;
+  }
+
+  .pavé6 {
+    top: 390%;
+    font-size: 4.5vw;
+    width: 95%;
+    left: 2%;
+    text-align: center;
+  }
+
+  .vidéo {
+    top: 400%;
+    height: 20vw;
+    width: 20vw;
+  }
+  
+  .pavé7 {
+    top: 405%;
+    font-size: 4.3vw;
+    width: 80%;
+    left: 4%;
+    text-align: left;
+  }
+
+  .club {
+    top: 425%;
+    height: 50vw;
+    width: 50vw;
+    right: 25%;
+
+  }
+
+  .pavé8 {
+    top: 462%;
+    font-size: 4.3vw;
+    width: 80%;
+    left: 8.5%;
+    text-align: center;
+  }
+
+  .carrerose2 {
+    top: 480%;
+    left: 0%;
+    width: 50vw;
+    height: 22vw;
+  }
+
+  .rondrose2 {
+    top: 480%;  
+    width: 22vw;
+    height: 22vw;
+    left: 39%;
+  }
+
+  #formation h1 {
+    top: 481.5%;
+    left: 16%;
+    font-size: 6vw;
+  }
+
+  .pave9 {
+    top: 494%;
+    font-size: 4.3vw;
+    width: 80%;
+    left: 6%;
+    text-align: left;
+  }
+
+  #formation a {
+    font-size:4.3vw;
+  }
+
+  .pave10 {
+    top: 505%;
+    font-size: 4.3vw;
+    width: 80%;
+    right: 6%;
+    text-align: right;
+  }
+
+  .pave11 {
+    top: 520%;
+    font-size: 4.3vw;
+    width: 80%;
+    left: 6%;
+    text-align: left;
+  }
+
+  .cour {
+    top: 510%;
+  }
+
+  .diplome {
+    top: 530%;
+  }
+
+  .pave12 {
+    top: 538%;
+    font-size: 4.3vw;
+    width: 80%;
+    right: 6%;
+    text-align: right;
+  }
+
+  .rondbleu2 {
+    top: 560%;  
+    width: 22vw;
+    height: 22vw;
+    left: 40%;
+  }
+
+  .carrebleu2 {
+    top: 560%;
+    right: 0%;
+    width: 50vw;
+    height: 22vw;
+  }
+
+  #dev h1 {
+    top: 561.2%;
+    right: 8%;
+    font-size: 6vw;
+  }
+
+  #production {
+    height: 1900px;
+  }
+
+  #stage {
+    height: 1500px;
+  }
+
+  #formation {
+    height: 700px;
+  }
+
+  #dev {
+    height: 1000px;
+  }
+
+  .figma {
+    top: 575%;
+    height: 65vw;
+    width: 65vw;
+    left: 15%;
+  }
+
+  .pave13 {
+    top: 600%;
+    font-size: 4.3vw;
+    width: 70%;
+    left: 25%;
+    text-align: right;
+  }
+
+  .figmalogo {
+    top: 605%;
+    height: 20vw;
+    width: 20vw;
+    left: 2%;
+  }
+  
+  .pave14 {
+    top: 615%;
+    font-size: 4.3vw;
+    width: 70%;
+    left: 5%;
+    text-align: left;
+  }
+
+  .vscodelogo {
+    top: 618%;
+    height: 20vw;
+    width: 20vw;
+    left: 75%;
+  }
+
+  .css {
+    top: 630%;
+    height: 70vw;
+    width: 70vw;
+    right: 15%;
+  }
+
+  .pave15 {
+    top: 647%;
+    font-size: 4.3vw;
+    right: 31%;
+  }
+
+  .html {
+    top: 660%;
+    height: 70vw;
+    width: 70vw;
+    left: 15%;
+  }
+
+  .pave16 {
+    top: 677%;
+    font-size: 4.3vw;
+    left: 29%;
+  }
+
+  .ligne {
+    top: 690%;
+  }
+
+  .contact {
+    top: 692%;
+    font-size: 4.3vw;
+  }
+
+  .contactgithub {
+    top: 693%;
+    height: 9vw;
+    width: 9vw;
+  }
+
+  .contactinstagram {
+    top: 693%;
+    height: 9vw;
+    width: 9vw;
+    right: 1%;
+  }
+
+  .contactyoutube {
+    top: 693%;
+    height: 9vw;
+    width: 9vw;
+    right: 10%;
+  }
+
+  .oui {
+    top: 698%;
+    font-size: 3vw;
+    text-align: center;
+    left: 13%;
+  }
+
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .ordi {
+    top:12%;
+  }
+}
