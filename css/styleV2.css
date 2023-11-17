@@ -614,7 +614,7 @@ header {
 }
 
 #dev {
-  height: 1400px;
+  height: 100px;
 }
 
 .pave13 {
@@ -701,10 +701,6 @@ header {
   height: 0.1vw; /* Épaisseur de la ligne */
   background-color: #ffffff; /* Couleur de la ligne */
   top: 870%;
-}
-
-#footer {
-  height: 200px;
 }
 
 .contact {
@@ -1144,7 +1140,7 @@ header {
   }
 
   #dev {
-    height: 1000px;
+    height: 300px;
   }
 
   .figma {
