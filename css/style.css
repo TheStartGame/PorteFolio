@@ -1255,3 +1255,29 @@ header {
     top:12%;
   }
 }
+
+
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+      #production {
+    height: 0px;
+  }
+
+  #stage {
+    height: 0px;
+  }
+
+  #formation {
+    height: 0px;
+  }
+
+  #dev {
+    height: 0px;
+  }
+
+  #footer {
+    height: 0px;
+  }
+
+  }
+}
