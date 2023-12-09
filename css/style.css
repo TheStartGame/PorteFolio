@@ -1145,6 +1145,7 @@ header {
 
   #footer {
     height: 125px;
+    overflow: hidden
   }
 
   .figma {
