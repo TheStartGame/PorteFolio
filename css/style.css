@@ -1143,6 +1143,10 @@ header {
     height: 300px;
   }
 
+  #footer {
+    height: 200px;
+  }
+
   .figma {
     top: 575%;
     height: 65vw;
