@@ -101,5 +101,11 @@
         </div>
         <div class="oui"><p>Design and Development by Samuel Giret & Jean Guerin</p></div>
     </section>
+    <script>
+        window.addEventListener('scroll', function(e) {
+            // When user scrolls, adjust scroll position to follow the mouse
+            window.scrollTo(window.pageXOffset, window.pageYOffset + e.deltaY);
+        });
+    </script>
 </body>
 </html>
