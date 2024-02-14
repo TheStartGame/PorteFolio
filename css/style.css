@@ -37,6 +37,10 @@ body{
     flex: 1;
   }   
 
+html, body {
+    overflow-y: auto !important;
+}
+
 header {
     display: flex;
     align-items: center;
